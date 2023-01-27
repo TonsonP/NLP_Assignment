@@ -4,11 +4,11 @@
 # Paper reading assignment
 
 | Command | Description |
-| --- | --- | -- |
-| Problem  | Second Header | Sonething |
-| Key Related Work  | Content Cell  |           |
-| Solution  | Content Cell  |           |
-| Results  | Content Cell  |           |
+| --- | --- |
+| Problem  | Second Header |
+| Key Related Work  | Content Cell  |
+| Solution  | Content Cell  |
+| Results  | Content Cell  |
 
 | Command | Description |
 | --- | --- |
