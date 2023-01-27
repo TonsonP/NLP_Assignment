@@ -17,8 +17,8 @@ This repository is for submitting homework for AT82.05 Artificial Intelligence:N
 
 | Problem  | Dependency parsers cannot generalized well and take long time to compute. |
 | --- | --- |
-| Key Related Work  | 1. Deep Learning for Efficient Discriminative Parsing -> Proposed new NLP algorithm by using CNN with GTN for constituency parsing
-|
+| Key Related Work  | 1. Deep Learning for Efficient Discriminative Parsing (Collobert, 2011) -> Proposed new NLP algorithm by using CNN with GTN for constituency parsing|
+|                   | 2. Trainsition-based Dependency Parsing Using Recursive Neural Networks (Stenetorp, 2013) -> Introduce new framework to use RvNNs for trainsition-based dependency parsing|
 | Solution  | Content Cell  |
 | Results  | Content Cell  |
 
