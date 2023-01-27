@@ -3,7 +3,7 @@
 
 # Paper reading assignment
 
-| Command | Description |
+
 | --- | --- |
 | Problem  | Second Header |
 | Key Related Work  | Content Cell  |
