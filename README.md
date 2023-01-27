@@ -7,7 +7,7 @@ This repository is for submitting homework for AT82.05 Artificial Intelligence:N
 
 | Problem  | Second Header |
 | --- | --- |
-| Key Related Work  | Content Cell  |
+| Key Related Work  | swwwwwww  |
 | Solution  | Content Cell  |
 | Results  | Content Cell  |
 
@@ -15,9 +15,10 @@ This repository is for submitting homework for AT82.05 Artificial Intelligence:N
 ## 2. A Fast and Accurate Dependency Parser using Neural Networks (EMNLP, 2014)
 ### Author Danqi Chen, Christopher D. Manning.
 
-| Problem  | Second Header |
+| Problem  | Dependency parsers cannot generalized well and take long time to compute. |
 | --- | --- |
-| Key Related Work  | Content Cell  |
+| Key Related Work  | 1. Deep Learning for Efficient Discriminative Parsing -> Proposed new NLP algorithm by using CNN with GTN for constituency parsing
+|
 | Solution  | Content Cell  |
 | Results  | Content Cell  |
 
