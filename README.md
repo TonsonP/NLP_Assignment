@@ -3,8 +3,8 @@
 
 # Paper reading assignment
 
-| Paper Name | Description |
 | Problem  | Second Header |
+| --- | --- |
 | Key Related Work  | Content Cell  |
 | Solution  | Content Cell  |
 | Results  | Content Cell  |
