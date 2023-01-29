@@ -5,17 +5,17 @@ This repository is for submitting homework for AT82.05 Artificial Intelligence:N
 ## 1. Evaluating Factuality in Text Simplification (ACL, 2022)
 ### Author Ashwin Devaraj, William Sheffield, Byron C. Wallace, Junyi Jessy Li
 
-| Problem  | Method to evaluating models for factuality.|
+| Problem  | How to evaluating models for factuality.|
 | --- | --- |
 | Key Related Work  | 1. Paragraph-level simplification of medical texts (Deveraj et al, 2021) -> The output from their propose new nasked language model (MLM) have hallucination*.|
-|                   | 2. Keep It Simple: Unsupervised Simplification of Multi-Paragraph Text (Laban et al, 2021) -> Text genertors predominantly introduce inaccuracies with novel entities.|
+|                   | 2. Keep It Simple: Unsupervised Simplification of Multi-Paragraph Text (Laban et al, 2021) -> Text simplification model introduces false information.|
 | Solution  | Construct an error annotation scheme for sentence level simplification (type of errors and their labels based on severity) and then determine the types of errors that most frequently found in various well-known simplification datasets and models.|
-| Results  | |
+| Results  ||
 | In term of datasets | In Newsela and Wikilarge dataset deletion errors are the most common while substitution errors are rarely occurs. Newsela dataset produce more deletion errors.|
-| In term of models   | Insertion error occur more often on T5 model with Newsela dataset. Substitution error cause from model more than dataset|
-| In term of measurement  | Current measures of semantic similarity and factuality are difficult to detect substitution errors that produce from the models|
+| In term of models   | Insertion error occur more often on T5 model with Newsela dataset. Substitution error mostly caused by model rather than dataset|
+| In term of measurement  | Current measures of semantic similarity and factuality are difficult to detect substitution errors that produces from the model|
 
-* By providing inaccurate version of medical text (e.g. disease information) can be worse than providing no such thing at all.
+* Personal Noted: By providing inaccurate version of medical text (e.g. disease information) can be worse than providing no such thing at all.
 
 ## 2. A Fast and Accurate Dependency Parser using Neural Networks (EMNLP, 2014)
 ### Author Danqi Chen, Christopher D. Manning.
