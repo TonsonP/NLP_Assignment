@@ -5,7 +5,7 @@ This repository is for submitting homework for AT82.05 Artificial Intelligence:N
 ## 1. Evaluating Factuality in Text Simplification (ACL, 2022)
 ### Author Ashwin Devaraj, William Sheffield, Byron C. Wallace, Junyi Jessy Li
 
-| Problem  | How to evaluating models for factuality.|
+| Problem  | Method to evaluating models for factuality.|
 | --- | --- |
 | Key Related Work  | 1. Paragraph-level simplification of medical texts (Deveraj et al, 2021) -> The output from their propose new nasked language model (MLM) have hallucination*.|
 |                   | 2. Keep It Simple: Unsupervised Simplification of Multi-Paragraph Text (Laban et al, 2021) -> Text genertors predominantly introduce inaccuracies with novel entities.|
