@@ -12,8 +12,7 @@ This repository is for submitting homework for AT82.05 Artificial Intelligence:N
 | Solution  | Construct an error annotation scheme for sentence level simplification (type of errors and their labels based on severity) and then determine the types of errors that most frequently found in various well-known simplification datasets and models.|
 | Results  | |
 | In term of datasets | In Newsela and Wikilarge dataset deletion errors are the most common while substitution errors are rarely occurs. Newsela dataset produce more deletion errors.|
-| In term of models   | 1. Insertion error occur more often on T5 model with Newsela dataset|
-|                     | 2. Most substitution erros modify single words or short phareses.|
+| In term of models   | Insertion error occur more often on T5 model with Newsela dataset. Substitution error cause from model more than dataset|
 | In term of measurement  | Current measures of semantic similarity and factuality are difficult to detect substitution errors that produce from the models|
 
 * By providing inaccurate version of medical text (e.g. disease information) can be worse than providing no such thing at all.
