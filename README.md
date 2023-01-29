@@ -10,7 +10,7 @@ This repository is for submitting homework for AT82.05 Artificial Intelligence:N
 | Key Related Work  | 1. Paragraph-level simplification of medical texts (Deveraj et al, 2021) -> The output from their propose new nasked language model (MLM) have hallucination*.|
 |                   | 2. Keep It Simple: Unsupervised Simplification of Multi-Paragraph Text (Laban et al, 2021) -> Text genertors predominantly introduce inaccuracies with novel entities.|
 | Solution  | Construct an error annotation scheme for sentence level simplification (type of errors and their labels based on severity) and then determine the types of errors that most frequently found in various well-known simplification datasets and models.|
-| Results  | In term of error from datasets |
+| Results  | |
 | In term of datasets | In Newsela and Wikilarge dataset deletion errors are the most common while substitution errors are rarely occurs. Newsela dataset produce more deletion errors.|
 | In term of models   | 1. Insertion error occur more often on T5 model with Newsela dataset|
 |                     | 2. Most substitution erros modify single words or short phareses.|
