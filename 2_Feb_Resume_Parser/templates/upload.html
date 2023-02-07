@@ -1,0 +1,34 @@
+{% extends 'bootstrap/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block content %}
+{% include "header.html" %}
+
+
+<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+    <div class="content">
+
+        <h2>Resume Parser</h2>
+
+
+        {{wtf.quick_form(form)}}
+
+
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit
+            amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus,
+            pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p> -->
+        <!-- <ul class="actions stacked">
+
+            <li><a href="#" class="button">Learn More</a></li>
+
+        </ul>
+    </div> -->
+        <!-- 
+        <div class="image">
+            <img src="static/images/spotlight01.jpg" alt="" />
+        </div> -->
+</section>
+
+
+{% include "footer.html" %}
+{%endblock %}
