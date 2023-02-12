@@ -28,6 +28,16 @@ This repository is for submitting homework for AT82.05 Artificial Intelligence:N
 | Solution  | Combining POS tags and arc labels with words instead of discrete representation. Using Cube activation function. Use pre-computational technique to pre-compute top frequent words, all POS tags and arc labels|
 | Results  | Accruacy improves around 2% in UAS and LAS scores. Improve parsing speed by 8 ~ 10 times. |
 
+## 3. Quality Controlled Paraphrase Generation. (ACL, 2022)
+### Author Elron Bandel, Rannit Aharonov, Michal Shmueli-Scheuer, Ilya Shnayderman, Noam Slonim, Liat Ein-Dor
+
+| Problem  | How can we control output quality of text-to-text model.|
+| --- | --- |
+| Key Related Work  | 1. The components of paraphrase evaluations (McCarthy et al., 2009) -> Discovered that semantic and syntactic evaluations are the primary components of paraphase quality.|
+|                   | 2. Adversarial Example Generation with Syntactically Controlled Paraphase Networks (Iyyer et al., 2018) -> Introduce a way to predict syntactic tree which is the groundwork of normalized tree edit distance that are used in this paper.|
+|                   | 3. BLEURT (Sellam et al., 2020) -> Introduce evaluation metric for Natural Language Generation which have high correlation with human judge.|
+| Results  | By comparing with Baseline Model (Fine-tuned T5 model) and Gold standard (Ground-truth paraphase) with three category Semantic similarity, syntactic diversity and lexical diversity. They're measured by Bleurt, Tree edit distance and character-level edit distace. QCPG win in every category. QCPG also get better reults by human evaluation on semantic similarity. |
+
 | Command | Description |
 | --- | --- |
 | `git status` | List all *new or modified* files |
