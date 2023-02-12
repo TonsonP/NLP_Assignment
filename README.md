@@ -36,6 +36,7 @@ This repository is for submitting homework for AT82.05 Artificial Intelligence:N
 | Key Related Work  | 1. The components of paraphrase evaluations (McCarthy et al., 2009) -> Discovered that semantic and syntactic evaluations are the primary components of paraphase quality.|
 |                   | 2. Adversarial Example Generation with Syntactically Controlled Paraphase Networks (Iyyer et al., 2018) -> Introduce a way to predict syntactic tree which is the groundwork of normalized tree edit distance that are used in this paper.|
 |                   | 3. BLEURT (Sellam et al., 2020) -> Introduce evaluation metric for Natural Language Generation which have high correlation with human judge.|
+| Solutions | By adding three-dimensional quality vectors (Lexical Diversity, Syntactic Diversity, Semantic Similarity) along with the sentences to the model (QCPG). It make the model produce target sentence that conforms to the quality constraints.
 | Results  | By comparing with Baseline Model (Fine-tuned T5 model) and Gold standard (Ground-truth paraphase) with three category Semantic similarity, syntactic diversity and lexical diversity. They're measured by Bleurt, Tree edit distance and character-level edit distace. QCPG win in every category. QCPG also get better reults by human evaluation on semantic similarity. |
 
 | Command | Description |
