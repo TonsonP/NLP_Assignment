@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="w3-container">
+        <form action="" method="POST">
+            {{form.csrf_token}}
+            {{form.name.label}}
+            {{form.name()}}
+            <br>
+            {{form.submit()}}
+        </form>
+        <hr>
+        {% if name %}
+            Topics : <strong>{{name}}<strong>
+        {% else %}
+            Not Found
+        {% endif %}
+        <hr>
+
+        <table class="w3-table-all">
+        <tr class="w3-blue">
+            <th>Sentence</th>
+            <th>Rating</th>
+        </tr>
+        {{str_results}}
+        {% for rating in results %}
+        <tr>
+            <td>{{rating}}</td>
+        </tr>
+        {% endfor %}
+        </table>
+        
+    </div>
+{% endblock %}
