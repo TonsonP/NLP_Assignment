@@ -7,7 +7,7 @@ This repository is for submitting homework for AT82.05 Artificial Intelligence:N
 
 | Problem  | How to evaluating models for factuality.|
 | --- | --- |
-| Key Related Work  | 1. Paragraph-level simplification of medical texts (Deveraj et al, 2021) -> The output from their propose new nasked language model (MLM) have hallucination*.|
+| Key Related Work  | 1. Paragraph-level simplification of medical texts (Deveraj et al, 2021) -> The output from their propose new masked language model (MLM) have hallucination*.|
 |                   | 2. Keep It Simple: Unsupervised Simplification of Multi-Paragraph Text (Laban et al, 2021) -> Text simplification model introduces false information.|
 | Solution  | Construct an error annotation scheme for sentence level simplification (type of errors and their labels based on severity) and then determine the types of errors that most frequently found in various well-known simplification datasets and models.|
 | Results  ||
@@ -38,6 +38,16 @@ This repository is for submitting homework for AT82.05 Artificial Intelligence:N
 |                   | 3. BLEURT (Sellam et al., 2020) -> Introduce evaluation metric for Natural Language Generation which have high correlation with human judge.|
 | Solutions | By adding three-dimensional quality vectors (Lexical Diversity, Syntactic Diversity, Semantic Similarity) along with the sentences to the model (QCPG). It make the model produce target sentence that conforms to the quality constraints.
 | Results  | By comparing with Baseline Model (Fine-tuned T5 model) and Gold standard (Ground-truth paraphase) with three category Semantic similarity, syntactic diversity and lexical diversity. They're measured by Bleurt, Tree edit distance and character-level edit distace. QCPG win in every category. QCPG also get better reults by human evaluation on semantic similarity. |
+
+## 4. BitFit: Simple Parameter-efficient Fine-tuning for Transformer-based Masked Language-models. (ACL, 2022)
+### Author Elad Ben-Zaken, Shauli Ravfogel, Yoav Goldberg
+
+| Problem  | Fully fine-tuning models are expensive.|
+| --- | --- |
+| Key Related Work  | 1. Parameter-efficient transfer learning for NLP. (Houlsby et al., 2019) -> Introduce a way to fine-tuning by adding small, trainable task-specific "Adapter" modules between the layers of the pre-trained model where the original parameters are shared between tasks.|
+|                   | 2. Parameter-efficient transfer learning with diff pruning. (Guo et al., 2020) -> Adding a sparse, task-specific difference-vector to original parameters, which remain fixed and are shared between tasks.|
+| Solutions | Training only the bias-term and the task-specific classification.
+| Results  | Reduce the parameters that need to fit by 1,000% while maintained the same accuracy but the results will be lower as the dataset get higher. |
 
 | Command | Description |
 | --- | --- |
