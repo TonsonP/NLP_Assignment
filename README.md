@@ -49,6 +49,19 @@ This repository is for submitting homework for AT82.05 Artificial Intelligence:N
 | Solutions | Training only the bias-term and the task-specific classification.
 | Results  | Reduce the parameters that need to fit by 1,000% while maintained the same accuracy but the results will be lower as the dataset get higher. |
 
+## 5. BERT: Pre-traning of Deep Bidirectional Transformers for Language Understanding. (NAACL, 2019)
+### Author Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova
+
+| Problem  | Model do not understand contextual meaning well.|
+| --- | --- |
+| Key Related Work  | 1. Attention is all you need. (Vaswani et al., 2019) -> Introduce a transformer models which is the foundation of BERT networks.|
+|                   | 2. Cloze Procedure: A New Tool For Measuring Radability. (Taylor., 1953) -> Introduce the cloze procedure which is a teaching strategy that uses passages of text with missing word. The MLM techniques is inspired from this|
+| Solutions | During pre-trained use "Masked Language Model (MLM)" to make the network learn contextual meaning<sup>1<sup> and "Next Sentence Prediction (NSP)" to make the model learn relationship between sentences<sup>2<sup>.
+| Results  | Model performance improved based on GLUE testing. |
+
+<sup>1<sup> E.g., input: "Chaky is the [mask1] at AIT, he teachs NLP [mask2]". model output: "professor", "classes".
+<sup>2<sup> E.g., input: "S1: Tonson likes pizza. S2: He usually have it with pepsi" model output: "S1 then S2"
+
 | Command | Description |
 | --- | --- |
 | `git status` | List all *new or modified* files |
